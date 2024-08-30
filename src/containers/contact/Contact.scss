@@ -1,0 +1,210 @@
+@import "../../_globalColor";
+
+.contact-div-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 4rem; /* Ensuring the form container is centered vertically */
+}
+
+.dark-mode a {
+  color: $textColorDark;
+}
+
+.contact-title {
+  margin-top: 0px;
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.contact-detail,
+.contact-detail-email {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 400;
+  color: $subTitle;
+  text-decoration: none;
+}
+
+.contact-detail:hover,
+.contact-detail-email:hover {
+  color: $textColor;
+  text-shadow: 2px 1px 2px $contactDetailHoverTS;
+  transition: all 0.3s;
+}
+
+.contact-subtitle {
+  text-transform: uppercase;
+}
+
+.contact-text-div {
+  margin-top: 1.5rem;
+}
+
+.contact-margin-top {
+  margin-top: 4rem;
+}
+
+.contact-image-div > img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 1.5rem;
+  margin-top: -4rem;
+}
+
+.contact-form-container {
+  width: 100%; /* Ensuring full width */
+  max-width: 700px; /* Constrain the maximum width for better centering */
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form container horizontally */
+  font-size: 16px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increase the gap for more spacing between elements */
+  width: 100%; /* Ensure the form uses full width of the container */
+}
+
+.form-floating {
+  position: relative;
+  width: 100%; /* Make all fields the same width */
+  margin-bottom: 1.5rem; /* Add a bit of margin for spacing */
+}
+
+.form-floating input,
+.form-floating textarea {
+  width: 100%; /* Full width of the container */
+  padding: 2rem 1.5rem; /* Increase padding for a larger appearance */
+  margin: 0; /* Remove any margin to reduce spacing */
+  max-width: 600px;
+  height: auto;
+  min-height: 60px; /* Set a minimum height for the inputs */
+  border-radius: 8px; /* Slightly rounder corners */
+  border: 1px solid #ddd;
+  font-size: 20px; /* Increase font size for better readability */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.form-floating textarea {
+  min-height: 200px; /* Increase height for the textarea to make it taller */
+}
+
+.contact-form label {
+  margin-bottom: 1rem; /* Increase spacing below the label */
+  font-size: 18px; /* Larger font size for label */
+}
+
+.contact-form button {
+  align-items: center;
+  width: 100%; /* Make button full width */
+  max-width: 400px;
+  padding: 1rem; /* Increase padding for a larger button */
+  margin-left: 155px;
+  font-size: 17px; /* Larger font size for button text */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #55198b; /* Use your primary color */
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  background-color: white;
+  color: #000;
+}
+
+/* Placeholder text size for the name input */
+.name-control::placeholder {
+  font-size: 30px; /* Adjust the size for the name input placeholder */
+  color: #a9a9a9; /* Optional: change the placeholder text color */
+  opacity: 1; /* Ensure full visibility of the placeholder text */
+}
+
+/* Placeholder text size for the email input */
+.email-control::placeholder {
+  font-size: 30px; /* Adjust the size for the email input placeholder */
+  color: #a9a9a9; /* Optional: change the placeholder text color */
+  opacity: 1;
+}
+
+/* Placeholder text size for the message textarea */
+.message-control::placeholder {
+  font-size: 22px; /* Adjust the size for the message textarea placeholder */
+  color: #a9a9a9; /* Optional: change the placeholder text color */
+  opacity: 1;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .name-control::placeholder {
+    font-size: 18px; /* Adjust the size for smaller screens */
+  }
+
+  .email-control::placeholder {
+    font-size: 16px; /* Adjust the size for smaller screens */
+  }
+
+  .message-control::placeholder {
+    font-size: 20px; /* Adjust the size for smaller screens */
+  }
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .contact-text-div {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .contact-detail,
+  .contact-detail-email {
+    font-size: 20px;
+  }
+
+  .contact-image-div {
+    display: none;
+  }
+
+  .contact-name-fields {
+    flex-direction: column; /* Stack fields vertically on smaller screens */
+  }
+
+  .contact-form-container {
+    padding: 1rem;
+  }
+
+  .contact-form {
+    gap: 1.5rem; /* Match desktop spacing */
+  }
+
+  .name,
+  .email-input,
+  .message-textarea {
+    width: 100%; /* Ensure full width on smaller screens */
+  }
+  .contact-form button {
+    max-width: 100%; /* Make button full width on smaller screens */
+    margin-left: 0; /* Remove left margin to center the button */
+    padding: 0.75rem; /* Slightly reduce padding for smaller screens */
+    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+  }
+}
