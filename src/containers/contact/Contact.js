@@ -96,7 +96,7 @@ export default function Contact() {
     name="email"
     id="email"
     className="email-control"
-    placeholder="Your Email"
+    placeholder="Email"
     value={formData.email}
     onChange={handleChange}
     required
@@ -105,7 +105,7 @@ export default function Contact() {
     name="message"
     id="message"
     className="message-control"
-    placeholder="Your Message"
+    placeholder="Message..."
     value={formData.message}
     onChange={handleChange}
     required
