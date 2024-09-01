@@ -41,8 +41,8 @@
 /* Medium Devices (Tablets, 768px and below) */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 0.938rem;
-    padding: 12px 12px;
+    font-size: 0.5rem;
+    padding: 12px 7px;
     margin-right: 0;
     width: 100%; /* Make the button take full width */
   }
@@ -56,16 +56,16 @@
 /* Small Devices (Large Phones, 576px and below) */
 @media (max-width: 576px) {
   .main-button {
-    font-size: 0.875rem;
-    padding: 10px 8px;
+    font-size: 0.6rem;
+    padding: 10px 7px;
   }
 }
 
 /* Extra Small Devices (Small Phones, 480px and below) */
 @media (max-width: 480px) {
   .main-button {
-    font-size: 0.813rem;
-    padding: 10px 12px;
+    font-size: 0.6rem;
+    padding: 10px 7px;
   }
 
   .project-button {
@@ -77,6 +77,6 @@
 @media (max-width: 320px) {
   .main-button {
     font-size: 0.75rem;
-    padding: 8px 10px;
+    padding: 8px 8px;
   }
 }
