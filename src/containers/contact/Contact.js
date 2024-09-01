@@ -86,7 +86,7 @@ export default function Contact() {
     name="name"
     id="name"
     className="name-control"
-    placeholder="Your Name"
+    placeholder="Name"
     value={formData.name}
     onChange={handleChange}
     required

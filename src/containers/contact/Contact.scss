@@ -79,7 +79,7 @@
 .form-floating input,
 .form-floating textarea {
   width: 100%; /* Full width of the container */
-  padding: 2rem 1.5rem; /* Increase padding for a larger appearance */
+  padding: 2rem 1rem; /* Increase padding for a larger appearance */
   margin: 0; /* Remove any margin to reduce spacing */
   max-width: 600px;
   height: auto;
@@ -93,11 +93,13 @@
 
 .form-floating textarea {
   min-height: 200px; /* Increase height for the textarea to make it taller */
+  max-width: 450px;
+  
 }
 
 .contact-form label {
   margin-bottom: 1rem; /* Increase spacing below the label */
-  font-size: 18px; /* Larger font size for label */
+  font-size: 20px; /* Larger font size for label */
 }
 
 .contact-form button {
@@ -105,7 +107,7 @@
   width: 100%; /* Make button full width */
   max-width: 400px;
   padding: 1rem; /* Increase padding for a larger button */
-  margin-left: 155px;
+  margin-left: 150px;
   font-size: 17px; /* Larger font size for button text */
   border: none;
   border-radius: 6px;
@@ -137,7 +139,7 @@
 
 /* Placeholder text size for the message textarea */
 .message-control::placeholder {
-  font-size: 22px; /* Adjust the size for the message textarea placeholder */
+  font-size: 18px; /* Adjust the size for the message textarea placeholder */
   color: #a9a9a9; /* Optional: change the placeholder text color */
   opacity: 1;
 }
@@ -145,15 +147,15 @@
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .name-control::placeholder {
-    font-size: 18px; /* Adjust the size for smaller screens */
-  }
-
-  .email-control::placeholder {
     font-size: 16px; /* Adjust the size for smaller screens */
   }
 
+  .email-control::placeholder {
+    font-size: 12px; /* Adjust the size for smaller screens */
+  }
+
   .message-control::placeholder {
-    font-size: 20px; /* Adjust the size for smaller screens */
+    font-size: 15px; /* Adjust the size for smaller screens */
   }
 }
 
@@ -189,7 +191,7 @@
   }
 
   .contact-form-container {
-    padding: 1rem;
+    padding: 0.25rem;
   }
 
   .contact-form {
@@ -204,7 +206,7 @@
   .contact-form button {
     max-width: 100%; /* Make button full width on smaller screens */
     margin-left: 0; /* Remove left margin to center the button */
-    padding: 0.75rem; /* Slightly reduce padding for smaller screens */
-    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+    padding: -0.5rem; /* Slightly reduce padding for smaller screens */
+    font-size: 13px; /* Adjust font size for better readability on smaller screens */
   }
 }
