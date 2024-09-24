@@ -252,7 +252,21 @@ const bigProjects = {
           name: "GitHub Repo",
           url: "https://github.com/dalfang/mood-cocktails-frontend"
         }
-
+      ]
+    },
+    {
+      image: require("./assets/images/marine-scape.png"),
+      projectName: "MarineScape",
+      projectDesc: "2D side-scrolling game using HTML, CSS, and JavaScript",
+      footerLink: [
+        {
+          name: "Play MarineScape here",
+          url: "https://dalfang.github.io/marine-scape/"
+        },
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/dalfang/marine-scape"
+        }
       ]
     }
   ],
