@@ -8,12 +8,12 @@
 
 .header {
   max-width: 100%;
-  position: fixed; /* Keep the header fixed */
-  top: 0; /* Align to the top */
+  position: fixed; 
+  top: 0; 
   left: 0;
   width: 100%;
-  z-index: 1000; /* Ensure it stays above other content */
-  transition: top 0.3s; /* Smooth transition for showing/hiding */
+  z-index: 1000; 
+  transition: top 0.3s; 
 }
 
 /* header */
@@ -34,7 +34,7 @@
 .header {
   background-color: $lightBackground1;
   max-width: 100%;
-  padding: 15px 4px 0 4px;
+  padding: 15px 0px 0px 0px;
   margin: 0px auto;
 }
 
