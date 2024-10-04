@@ -25,7 +25,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/17WvRvLP7qanEeJsfoNjFMWkd-tUqc2R7/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1whqyamYLPpbZdDWafaFttHuznsR6On0q/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -135,7 +135,7 @@ const educationInfo = {
     {
       schoolName: "Harvard University",
       logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
+      subHeader: "Master of public health",
       duration: "September 2017 - April 2019",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
