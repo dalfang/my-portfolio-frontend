@@ -25,10 +25,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-        'service_mz76kaa',
-        'template_cwdhhe9',
+        "service_mz76kaa",
+        "template_cwdhhe9",
         e.target,
-        '6FDJwFOUAVV1hUgvI'
+        "6FDJwFOUAVV1hUgvI"
       )
       .then(
         (result) => {
@@ -51,24 +51,34 @@ export default function Contact() {
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
-                isDark ? "dark-mode contact-subtitle" : "subTitle contact-subtitle"
+                isDark
+                  ? "dark-mode contact-subtitle"
+                  : "subTitle contact-subtitle"
               }
             >
               {contactInfo.subtitle}
             </p>
             <div
-              className={isDark ? "dark-mode contact-text-div" : "contact-text-div"}
+              className={
+                isDark ? "dark-mode contact-text-div" : "contact-text-div"
+              }
             >
               {contactInfo.number && (
                 <>
-                  <a className="contact-detail" href={"tel:" + contactInfo.number}>
+                  <a
+                    className="contact-detail"
+                    href={"tel:" + contactInfo.number}
+                  >
                     {contactInfo.number}
                   </a>
                   <br />
                   <br />
                 </>
               )}
-              <a className="contact-detail-email" href={"mailto:" + contactInfo.email_address}>
+              <a
+                className="contact-detail-email"
+                href={"mailto:" + contactInfo.email_address}
+              >
                 {contactInfo.email_address}
               </a>
               <br />
@@ -81,41 +91,41 @@ export default function Contact() {
             <form className="contact-form" onSubmit={handleSubmit}>
               <label htmlFor="email">Get in touch!</label>
               <div className="form-floating">
-  <input
-    type="text"
-    name="name"
-    id="name"
-    className="name-control"
-    placeholder="Name"
-    value={formData.name}
-    onChange={handleChange}
-    required
-  />
-  <input
-    type="email"
-    name="email"
-    id="email"
-    className="email-control"
-    placeholder="Email"
-    value={formData.email}
-    onChange={handleChange}
-    required
-  />
-  <textarea
-    name="message"
-    id="message"
-    className="message-control"
-    placeholder="Message..."
-    value={formData.message}
-    onChange={handleChange}
-    required
-  ></textarea>
-</div>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  className="name-control"
+                  placeholder="Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  className="email-control"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  className="message-control"
+                  placeholder="Message..."
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
               <button type="submit">Send Message</button>
             </form>
           </div>
 
-          <div className="contact-image-div">
+          {/*} <div className="contact-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={email} />
             ) : (
@@ -125,7 +135,7 @@ export default function Contact() {
                 style={{ maxWidth: "100%", height: "auto", margin: "20px 0" }}
               />
             )}
-          </div>
+          </div>*/}
         </div>
       </div>
     </Fade>
