@@ -1,10 +1,10 @@
 import React, { useContext, useState } from "react";
 import "./Contact.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
-import { illustration, contactInfo } from "../../portfolio";
+import { contactInfo } from "../../portfolio";
 import { Fade } from "react-reveal";
-import email from "../../assets/lottie/email";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
+//import email from "../../assets/lottie/email";
+//import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 import emailjs from "emailjs-com";
 
