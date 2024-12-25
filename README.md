@@ -1,8 +1,27 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio to showcase my skills, projects, and experience as a Full Stack Web Developer.
 
-Currently, two official plugins are available:
+Welcome to my portfolio! Discover my work and explore the technologies I've used to build engaging web applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Visit the Website
+[Portfolio Website](https://dalin-portfolio.netlify.app/) *deployed with Netlify*
+
+## Description
+This is a Single Page Application (SPA) built with React.js. The portfolio showcases various projects and my development journey.
+
+Tech stack:
+- **Frontend**: React.js, SCSS
+- **Styling**: SCSS for a responsive, modern design
+- **Development Environment**: Docker for consistent environments
+
+Features:
+- Fully responsive design optimized for multiple screen sizes.
+- Showcases various projects including web apps, games, and AI integrations.
+- Details about my background, skills, and experience as a Full Stack Developer.
+  
+## Tech Stack
+- **React.js** for building the user interface
+- **SCSS** for clean and scalable styles
+- **Docker** for containerization and environment consistency
+
