@@ -21,7 +21,7 @@ const greeting = {
   username: "Dalin Fangloy",
   title: "Hello, I'm Dalin",
   subTitle: emoji(
-    "Highly motivated Full Stack Web Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Highly motivated Full Stack Web Developer 🚀 having an experience of building Web applications with JavaScript / TypeScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1_ZeQOAE2fahkF4wSA_DijxeEdxwkOeeU/view?usp=drive_link", // Set to empty to hide the button
@@ -108,10 +108,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "sql-database",
       fontAwesomeClassname: "fas fa-database",
     },
-    /*{
+    {
       skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },*/
+      fontAwesomeClassname: "fab fa-aws",
+    },
     /*{
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
@@ -278,6 +278,22 @@ const bigProjects = {
         {
           name: "GitHub Repo",
           url: "https://github.com/dalfang/tappy-jellyfish.git",
+        },
+      ],
+    },
+    {
+      image: require("./assets/images/my-weather.png"),
+      projectName: "I hope it won't rain today",
+      projectDesc:
+        "Weather forecast application, built with TypeScript, React, and Material UI",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://ihopeitwontrain.vercel.app/",
+        },
+        {
+          name: "GitHub Repo",
+          url: "https://github.com/dalfang/my-weather",
         },
       ],
     },
